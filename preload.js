@@ -13,3 +13,13 @@
 //         establecerVersion(`version${componente}`, process.versions[componente.toLowerCase()]);
 //     }
 // });
+// const { remote } = require('electron');
+// const currentWindow = remote.getCurrentWindow();
+
+// document.getElementById('close-button').addEventListener('click', () => {
+//   currentWindow.close();
+// });
+
+// document.getElementById('minimize-button').addEventListener('click', () => {
+//   currentWindow.minimize();
+// });

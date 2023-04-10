@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+</head>
+<style>
+    body, html {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    body{
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        background: #444653;
+        text-align: center; 
+        font-size: 30;
+    }
+    p{
+        color: white;
+        box-sizing: border-box;
+        font-size: 40;
+    }
+</style>
+<body>
+    <p>Contacta a servicio <br> Error : <i></i> - <span></span> </p>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('mac');
+        const error = params.get('error');
+        const body = document.querySelector('span');
+        body.innerHTML += id;
+        const body2 = document.querySelector('i');
+        body2.innerHTML += error;
+    </script>
+</body>
+</html>
