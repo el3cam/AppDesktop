@@ -5,7 +5,7 @@ function crearVentanaPrincipal() {
     resizable: true,
     maximizable: true,
     fullscreenable: false,
-    frame: false,
+    frame: true,
     icon: __dirname + "/icon.png",
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
