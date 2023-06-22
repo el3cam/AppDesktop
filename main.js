@@ -2,8 +2,8 @@ const { app, BrowserWindow } = require("electron");
 const path = require("path");
 function crearVentanaPrincipal() {
   let ventanaPrincipal = new BrowserWindow({
-    resizable: false,
-    maximizable: false,
+    resizable: true,
+    maximizable: true,
     fullscreenable: false,
     frame: false,
     icon: __dirname + "/icon.png",
