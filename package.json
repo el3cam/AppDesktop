@@ -7,15 +7,16 @@
     "start": "electron .",
     "createApp": "electron-packager . App  --platform=win32 --arch=x64 --icon=tato.ico ."
   },
-  "keywords": [
-    "Electron",
-    "Escritorio",
-    "Multiplataforma",
-    "Node.js",
-    "Chromium"
+  "files": [
+    "index.js",
+    "fecha.txt"
   ],
   "author": "ELECAM",
   "devDependencies": {
     "electron": "^8.1.1"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "node-os-utils": "^1.3.7"
   }
 }
